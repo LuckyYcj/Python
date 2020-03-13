@@ -301,3 +301,219 @@ PySpark  [第三方库] Spark提供的Python API★★★
 dumbo  [第三方库] 这个模块可以让Pythoner轻松的编写和运行 Hadoop 程序，程序版本比较早，可以作为参考★★
 dpark  [第三方库]Python对Spark的克隆版本，类MapReduce框架★★
 streamparse  [第三方库]Streamparse允许通过Storm对实时数据流运行Python代码★★★
+
+
+
+
+
+一门语言好用、方便的程度在很多时候会取决于这门语言相关的库够不够丰富，Python 之所以火爆除了其本身的语法和特性之外，还在一定程度上取决于其有太多太多库的支持，不论是官方维护的还是第三方开发的。就比如说做机器学习为什么很多人都用 Python，一个非常大的因素就是 TensorFlow 和 PyTorch 对 Python 的支持。当然在这里并不是说 Python 的库真的就全的不要不要的，它在某些领域或者项目的生态还是有待完善的。
+
+正好昨天刷到知乎一个问题「你见过哪些相见恨晚的 Python 库？」，其意就是想了解下有哪些非常好用的提高生产力的 Python 库。一些回答直接把 awesome-python 贴过来，点赞非常多，当然多归多，但是里面很多都是些过期的或者其实没太有什么价值的库，反而会增加了挑选库的成本。我大体上把一些回答过了一遍，另外结合自己平时了解的内容，稍微对一些基础生产力库做了简单的梳理，在这里分享给大家。
+
+所以这里就不再针对于一些特殊的场景推荐了，如一些 Web开发库、网络请求库、数据操作库、数据分析库、机器分析库等等。下面主要罗列一些适用范围和方向较广，对于一些基础设施的建设比较有用，能在多数场景下提高 Python 生产力的库，描述比较简单，主要是提供一个列表，仅供参考哈。
+
+attrs、cattrs
+
+GitHub：https://github.com/python-attrs/attrs、https://github.com/Tinche/cattrs
+
+简化类的定义、序列化反序列化等操作。
+
+个人写的简介：https://mp.weixin.qq.com/s/oHK-Y4lOeaQCFtDWgqXxFA
+
+loguru
+
+GitHub：https://github.com/Delgan/loguru
+
+可简化日志记录写法。
+
+个人写的简介：https://mp.weixin.qq.com/s/5Ri1WS5cTGCNAQ0I_zYycg
+
+autopep8
+
+GitHub：https://github.com/hhatto/autopep8
+
+把 Python 代码转成符合 PEP8 规范的代码。
+
+psutil
+
+GitHub：https://github.com/giampaolo/psutil
+
+Python 实现任务监控的库。
+
+furl
+
+GitHub：https://github.com/gruns/furl
+
+对 url 的处理非常方便，比 urllib 等库好用多。
+
+retrying、tenacity
+
+GitHub：https://github.com/rholder/retrying、https://github.com/jd/tenacity
+
+异常重试库，如出错之后重试多少次，尤其在发起一些 HTTP 请求时非常有用，当然也能用于其他地方。
+
+typing
+
+Docs：https://docs.python.org/zh-cn/3/library/typing.html#module-typing
+
+对 Python 类型的支持，支持多种类型、嵌套类型，也推荐多多使用 Python 的类型注解。
+
+argparse
+
+Docs：https://docs.python.org/zh-cn/3/library/argparse.html
+
+个人曾经使用过几个命令行解析工具，如 docopt，但后来还是转回来了 argparse，功能齐全强大。
+
+absl-py
+
+GitHub：https://github.com/abseil/abseil-py
+
+个人感觉比 argparse 更易用的库，如 TensorFlow 就在使用这个，对于定义一些 Flag 非常方便。
+
+pipenv
+
+GitHub：https://github.com/pypa/pipenv
+
+功能更全的包管理工具，集成虚拟环境、支持 Lock 机制锁定安装包版本和依赖信息。当然也有坑点，可自行搜索。
+
+drf
+
+Docs：https://www.django-rest-framework.org/
+
+基于 Django 的 REST Framework，快速实现 REST API。
+
+watchdog
+
+GitHub：https://github.com/gorakhargosh/watchdog
+
+方便监视文件系统改动。
+
+glob
+
+Docs：https://docs.python.org/3/library/glob.html
+
+对文件的操作非常方便。
+
+2to3
+
+Docs：https://docs.python.org/2/library/2to3.html
+
+把 Python2 代码转成 Python3 代码。
+
+glom
+
+GitHub：https://github.com/mahmoud/glom
+
+对 JSON 嵌套的处理非常方便。
+
+pathlib
+
+Docs：https://docs.python.org/3/library/pathlib.html
+
+更为方便的 Python 路径操作库。
+
+environs
+
+GitHub：https://github.com/sloria/environs
+
+对于环境变量的获取非常方便，支持多种类型，如 int、bool 等。
+
+pysnooper
+
+GitHub：https://github.com/cool-RR/PySnooper
+
+非常方便简单的 Python 调试器，可以追踪到代码每一处细节的执行状态。
+
+tqdm
+
+GitHub：https://github.com/tqdm/tqdm
+
+进度条控制显示非常方便。
+
+sh
+
+GitHub：https://github.com/amoffat/sh
+
+对 Linux 一些命令的封装，简单好用又高效。
+
+faker
+
+GitHub：https://github.com/joke2k/faker
+
+模拟数据的生成。
+
+个人写的简介：https://mp.weixin.qq.com/s/iLjr95uqgTclxYfWWNxrAA
+
+arrow、dateutil、dateparser、pendulum
+
+GitHub：https://github.com/crsmithdev/arrow、https://github.com/dateutil/dateutil、https://github.com/scrapinghub/dateparser、https://github.com/sdispater/pendulum
+
+时间解析和处理库，非常方便。arrow 目前 Star 最多，好评最多。
+
+yagmail
+
+GitHub：https://github.com/kootenpv/yagmail
+
+方便的发邮件库，替代自带的 smtplib。
+
+chardet
+
+GitHub：https://github.com/chardet/chardet
+
+字符串类型编码检测。
+
+pypinyin
+
+GitHub：https://github.com/mozillazg/python-pinyin
+
+汉字转拼音，在一些中文转化处理上很有用。
+
+个人写的简介：https://mp.weixin.qq.com/s/NvA3j8Ns1-6CFgWpUcWwQw
+
+sphinx
+
+Docs：https://www.sphinx-doc.org/en/master/
+
+编写文档使用，大多数 Python 库文档都是这个写的，如 Scrapy、requests。
+
+个人 sphinx + markdown 的样例：https://github.com/Gerapy/Docs
+
+jinja2
+
+GitHub：https://github.com/pallets/jinja
+
+一个方便的模板引擎，呈现页面时很方便。
+
+click
+
+GitHub：https://github.com/pallets/click
+
+更方便灵活地实现命令行传递参数。
+
+ray
+
+GitHub：https://github.com/ray-project/ray
+
+分布式多进程管理。
+
+supervisor
+
+GitHub：https://github.com/Supervisor/supervisor
+
+进程管理工具，如实现多任务后台运行，Docker 打包时会经常用到。
+
+apscheduler
+
+GitHub：https://github.com/agronholm/apscheduler
+
+Python 定时任务，不过 K8S 也可以实现，个人目前可能更倾向于 K8S。
+
+intelpython
+
+Home：https://software.intel.com/en-us/distribution-for-python
+
+这不是 Python 库，是一个 Intel 开发的基于 Intel 处理器优化的 Python 解释器，对于大规模运算提升很大。
+
+完毕。
+
+好啦，先推荐这么多了，后面还会慢慢积累，大家可以了解下，个人感觉有不少库还是能极大提高生产力的。
